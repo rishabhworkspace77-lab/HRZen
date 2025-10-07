@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HRZen - Smart HR Management</title>
+<style>
+    /* Reset and basic styling */
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Arial', sans-serif; }
+    body {
+        background-color: #0a0a0a;
+        color: #fff;
+        overflow-x: hidden;
+        position: relative;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* Falling Stars */
+    #stars-container { position:absolute; top:0; left:0; width:100%; height:100%; overflow:hidden; z-index:0; }
+    .star {
+        position: absolute;
+        border-radius: 50%;
+        opacity: 0.8;
+        background: linear-gradient(45deg, #00ffff, #ff00ff);
+        animation: fall linear infinite;
+    }
+    @keyframes fall {
+        0% { transform: translateY(-10px) translateX(0px); opacity:1; }
+        100% { transform: translateY(110vh) translateX(50px); opacity:0; }
+    }
+
+    /* Shooting Star */
+    .shooting-star {
+        position: absolute;
+        width: 2px;
+        height: 80px;
+        background: linear-gradient(45deg, #0ff, #f0f);
+        opacity: 0;
+        transform: rotate(45deg);
+        z-index:1;
+        pointer-events: none;
+        animation: shoot 1s linear forwards;
+    }
+    @keyframes shoot {
+        0% { transform: translateX(0) translateY(0) rotate(45deg); opacity:1; }
+        100% { transform: translateX(100vw) translateY(100vh) rotate(45deg); opacity:0; }
+    }
+
+    /* Hero Section */
+    .hero {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        z-index:1;
+    }
+    .hero h1 {
+        font-size: 4rem;
+        color: #00ffff;
+        text-shadow: 0 0 10px rgba(21, 32, 32, 0.575), 0 0 20px rgb(25, 11, 132), 0 0 30px rgb(2, 71, 117);
+        margin-bottom: 20px;
+    }
+    .hero p {
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+        text-shadow: 0 0 5px #fff;
+    }
+    .hero-buttons {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        z-index:1;
+    }
+    .hero-buttons a {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        border: 2px solid #0ff;
+        border-radius: 8px;
+        color: #0ff;
+        transition: 0.3s;
+        box-shadow: 0 0 10px #0ff, 0 0 20px #f0f;
+    }
+    .hero-buttons a:hover {
+        background-color: #0ff;
+        color: #000;
+        box-shadow: 0 0 20px #0ff, 0 0 40px #f0f;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #111;
+        text-align: center;
+        padding: 20px 10px;
+        border-top: 2px solid #0ff;
+        margin-top: -5px;
+        z-index:1;
+        position: relative;
+    }
+    footer p { margin-bottom: 10px; color: #ccc; }
+    footer .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    footer .footer-links a {
+        color: #0ff;
+        border-bottom: 1px solid transparent;
+        transition: 0.3s;
+    }
+    footer .footer-links a:hover {
+        border-bottom: 1px solid #0ff;
+    }
+
+    /* Responsive */
+    @media(max-width:768px){
+        .hero h1 { font-size: 3rem; }
+        .hero p { font-size: 1.2rem; }
+        .hero-buttons a { font-size: 1rem; padding: 12px 25px; }
+    }
+    @media(max-width:480px){
+        .hero h1 { font-size: 2.5rem; }
+        .hero p { font-size: 1rem; }
+        .hero-buttons { flex-direction: column; }
+        .hero-buttons a { width: 80%; margin: 5px auto; }
+    }
+</style>
+</head>
+<body>
+
+<!-- Falling Stars Container -->
+<div id="stars-container"></div>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>HRZen</h1>
+    <p>Smart, Secure, Modern HR Management for All Your Outlets</p>
+    <div class="hero-buttons">
+        <a href="employee_login.php">Employee Signup</a>
+        <a href="admin_login.php">Admin Login</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2025 HRZen. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="terms.html">Terms & Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="license.html">License</a>
+    </div>
+</footer>
+
+<!-- Stars & Shooting Star JS -->
+<script>
+// Generate 100 falling stars
+const starCount = 100;
+const container = document.getElementById('stars-container');
+for(let i=0; i<starCount; i++){
+    const star = document.createElement('div');
+    star.classList.add('star');
+    star.style.left = Math.random() * 100 + 'vw';
+    star.style.animationDuration = (3 + Math.random() * 5) + 's';
+    star.style.animationDelay = Math.random() * 5 + 's';
+    star.style.width = star.style.height = (1 + Math.random() * 3) + 'px';
+    container.appendChild(star);
+}
+
+// Shooting star every 5 seconds
+setInterval(() => {
+    const shooting = document.createElement('div');
+    shooting.classList.add('shooting-star');
+    shooting.style.top = Math.random() * 50 + 'vh';
+    shooting.style.left = Math.random() * 50 + 'vw';
+    document.body.appendChild(shooting);
+    setTimeout(() => shooting.remove(), 1000); // remove after animation
+}, 5000);
+</script>
+
+</body>
+</html>

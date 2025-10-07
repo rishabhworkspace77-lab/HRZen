@@ -1,0 +1,107 @@
+/* admin.css - Admin HRMS Dashboard (Dark Theme) */
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background: #1b1f27;
+  color: #eaeaea;
+  padding: 20px;
+}
+
+h2, h3 {
+  color: #ffffff;
+}
+
+.card {
+  background: #2a2f3a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+form {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #1f232d;
+  color: #f1f1f1;
+  margin-right: 8px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #0b74de;
+}
+
+button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button[type="submit"] {
+  background: #0b74de;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background: #095cb0;
+}
+
+.btn-status {
+  background: #2ecc71;
+  color: #fff;
+}
+
+.btn-status:hover {
+  background: #27ae60;
+}
+
+.btn-inactive {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.btn-inactive:hover {
+  background: #c0392b;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #3a3f4b;
+  text-align: left;
+}
+
+th {
+  background: #20252f;
+  color: #bbb;
+}
+
+tr:hover {
+  background: #2f3542;
+}
+
+a.link {
+  color: #0b74de;
+  text-decoration: none;
+}
+
+a.link:hover {
+  text-decoration: underline;
+}

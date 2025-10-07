@@ -1,0 +1,89 @@
+/* style.css - Client Side HRMS (Employee Registration) */
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f8;
+  color: #333;
+}
+
+.container,
+.card {
+  max-width: 700px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  margin-top: 0;
+  color: #0b74de;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 600;
+  color: #222;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #0b74de;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.locations label {
+  margin-right: 20px;
+  font-weight: normal;
+}
+
+.file-input {
+  margin-top: 6px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 18px;
+  background: #0b74de;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #095cb0;
+}
+
+a {
+  color: #0b74de;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

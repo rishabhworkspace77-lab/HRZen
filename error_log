@@ -1,0 +1,20 @@
+[20-Sep-2025 13:01:11 UTC] PHP Warning:  Undefined variable $locations in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 50
+[20-Sep-2025 13:01:11 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 50
+[20-Sep-2025 13:01:11 UTC] PHP Warning:  Undefined variable $employees in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 83
+[20-Sep-2025 13:01:11 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 83
+[20-Sep-2025 13:01:15 UTC] PHP Warning:  Undefined variable $locations in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 50
+[20-Sep-2025 13:01:15 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 50
+[20-Sep-2025 13:01:15 UTC] PHP Warning:  Undefined variable $employees in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 83
+[20-Sep-2025 13:01:15 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 83
+[20-Sep-2025 13:01:15 UTC] PHP Warning:  Undefined variable $locations in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 50
+[20-Sep-2025 13:01:15 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 50
+[20-Sep-2025 13:01:15 UTC] PHP Warning:  Undefined variable $employees in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 83
+[20-Sep-2025 13:01:15 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 83
+[20-Sep-2025 13:01:16 UTC] PHP Warning:  Undefined variable $locations in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 50
+[20-Sep-2025 13:01:16 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 50
+[20-Sep-2025 13:01:16 UTC] PHP Warning:  Undefined variable $employees in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 83
+[20-Sep-2025 13:01:16 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 83
+[20-Sep-2025 13:01:21 UTC] PHP Warning:  Undefined variable $locations in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 50
+[20-Sep-2025 13:01:21 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 50
+[20-Sep-2025 13:01:21 UTC] PHP Warning:  Undefined variable $employees in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 83
+[20-Sep-2025 13:01:21 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/d69hvcf21121/public_html/yuan-hrms/admin_dashboard.php on line 83
